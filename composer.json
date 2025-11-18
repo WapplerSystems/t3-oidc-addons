@@ -1,0 +1,20 @@
+{
+	"name": "wapplersystems/oidc-addons",
+	"type": "typo3-cms-extension",
+	"description": "",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://wappler.systems",
+	"require": {
+		"causal/oidc": "^4"
+	},
+	"autoload": {
+		"psr-4": {
+			"WapplerSystems\\OidcAddons\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "oidc_addons"
+		}
+	}
+}
