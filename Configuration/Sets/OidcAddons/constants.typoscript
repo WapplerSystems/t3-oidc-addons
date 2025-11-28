@@ -1,0 +1,9 @@
+
+plugin.tx_oidcaddons {
+    settings {
+        # cat=plugin.tx_oidcaddons/other/a; type=int+; label=Login Page Uid
+        loginPageUid =
+    }
+
+
+}

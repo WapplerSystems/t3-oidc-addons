@@ -7,7 +7,7 @@ ExtensionManagementUtility::addPlugin(
     new SelectItem(
         type: 'select',
         label: 'Login / Logout Button',
-        value: 'LoginLogoutButton',
+        value: 'oidcaddons_loginlogoutbutton',
         icon: 'ext-oidc-icon'
     ),
     'CType',
