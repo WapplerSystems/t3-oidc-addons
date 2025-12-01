@@ -7,6 +7,7 @@ use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
+#[AsController]
 class AuthorizationStatusController extends ActionController
 {
 

@@ -8,7 +8,7 @@ plugin.tx_oidcaddons {
 
 
 
-tt_content.oidcaddons_loginlogoutbutton < lib.contentElement
-tt_content.oidcaddons_loginlogoutbutton.templateName = OidcAddons/LoginLogoutButton
+#tt_content.oidcaddons_loginlogoutbutton < lib.contentElement
+#tt_content.oidcaddons_loginlogoutbutton.templateName = OidcAddons/LoginLogoutButton
 
 tt_content.oidcaddons_loginlogoutbutton.templateRootPaths.13 = EXT:oidc_addons/Resources/Private/Templates/
