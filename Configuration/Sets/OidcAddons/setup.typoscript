@@ -3,8 +3,10 @@
 plugin.tx_oidcaddons {
     settings {
         loginPageUid = {$plugin.tx_oidcaddons.settings.loginPageUid}
-
         oidcPluginPageId = {$plugin.tx_oidcaddons.settings.oidcPluginPageId}
+        clientId = {$plugin.tx_oidcaddons.settings.clientId}
+        logoutUrl = {$plugin.tx_oidcaddons.settings.logoutUrl}
+        redirectLogoutPageId = {$plugin.tx_oidcaddons.settings.redirectLogoutPageId}
     }
 }
 

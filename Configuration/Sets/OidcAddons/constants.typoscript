@@ -7,7 +7,6 @@ plugin.tx_oidcaddons {
         # cat=plugin.tx_oidcaddons/other/b; type=int+; label=Page ID where the oidc plugin is located
         oidcPluginPageId =
 
-
         # cat=plugin.tx_oidcaddons/other/sso/c; type=text; label=SSO logout link URL
         logoutUrl =
 
