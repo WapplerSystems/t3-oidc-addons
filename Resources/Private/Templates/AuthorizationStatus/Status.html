@@ -5,10 +5,10 @@
 <f:section name="Main">
 
     <f:if condition="{showLoginSuccessMessage}">
-        <div class="alert alert-success"><f:translate key="LLL:EXT:oidc_addons/Resources/Private/Languages/locallang.xlf:mg.loginSuccessfull" /> Anmeldung war erfolgreich</div>
+        <div class="alert alert-success"><f:translate key="LLL:EXT:oidc_addons/Resources/Private/Languages/locallang.xlf:msg.loginSuccessfull" /></div>
     </f:if>
     <f:if condition="{showLogoutSuccessMessage}">
-        <div class="alert alert-success"><f:translate key="LLL:EXT:oidc_addons/Resources/Private/Languages/locallang.xlf:mg.logoutSuccessfull" /> Abmeldung war erfolgreich</div>
+        <div class="alert alert-success"><f:translate key="LLL:EXT:oidc_addons/Resources/Private/Languages/locallang.xlf:msg.logoutSuccessfull" /></div>
     </f:if>
 
 
@@ -20,9 +20,6 @@
             <f:link.page pageUid="{settings.oidcPluginPageId}" class="btn btn-primary"><f:translate key="LLL:EXT:oidc_addons/Resources/Private/Languages/locallang.xlf:btn.login" /></f:link.page>
         </f:else>
     </f:if>
-
-
-
 
 </f:section>
 

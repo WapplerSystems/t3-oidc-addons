@@ -8,6 +8,12 @@
 			<trans-unit id="btn.logout">
 				<source>Log out</source>
 			</trans-unit>
+			<trans-unit id="msg.loginSuccessfull">
+				<source>Log in was successfull</source>
+			</trans-unit>
+			<trans-unit id="msg.logoutSuccessfull">
+				<source>Log out was successfull</source>
+			</trans-unit>
 
 		</body>
 	</file>

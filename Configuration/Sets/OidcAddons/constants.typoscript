@@ -1,20 +1,8 @@
 
 plugin.tx_oidcaddons {
     settings {
-        # cat=plugin.tx_oidcaddons/other/a; type=int+; label=Login Page Uid
-        loginPageUid =
-
         # cat=plugin.tx_oidcaddons/other/b; type=int+; label=Page ID where the oidc plugin is located
         oidcPluginPageId =
-
-        # cat=plugin.tx_oidcaddons/other/sso/c; type=text; label=SSO logout link URL
-        logoutUrl =
-
-        # cat=plugin.tx_oidcaddons/other/sso/d; type=text; label=Redirect Logout Page ID
-        redirectLogoutPageId =
-
-        # cat=plugin.tx_oidcaddons/other/sso/e; type=text; label=SSO Client ID
-        clientId =
 
     }
 
