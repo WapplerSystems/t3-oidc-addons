@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages">
+		<body>
+			<trans-unit id="btn.login">
+				<source>Log in</source>
+				<target>Anmelden</target>
+			</trans-unit>
+			<trans-unit id="btn.logout">
+				<source>Log out</source>
+				<target>Abmelden</target>
+			</trans-unit>
+			<trans-unit id="msg.loginSuccessfull">
+				<source>Log in was successfull</source>
+				<target>Die Anmeldung war erfolgreich</target>
+			</trans-unit>
+			<trans-unit id="msg.logoutSuccessfull">
+				<source>Log out was successfull</source>
+				<target>Die Abmeldung war erfolgreich</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
