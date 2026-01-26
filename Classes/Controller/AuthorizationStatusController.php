@@ -4,6 +4,7 @@ namespace WapplerSystems\OidcAddons\Controller;
 
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Backend\Attribute\AsController;
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
@@ -15,11 +16,24 @@ class AuthorizationStatusController extends ActionController
     public function statusAction(): ResponseInterface
     {
 
+        $extensionConfiguration = GeneralUtility::makeInstance(ExtensionConfiguration::class);
+        $oidcConfig = $extensionConfiguration->get('oidc');
+        $oidcEndpointLogout = $oidcConfig['oidcEndpointLogout'] ?? null;
+        $oidcClientKey = $oidcConfig['oidcClientKey'] ?? null;
+
         /** @var Context $context */
         $context = GeneralUtility::makeInstance(Context::class);
         $isLoggedIn = $context->getPropertyFromAspect('frontend.user', 'isLoggedIn');
 
         $this->view->assign('isLoggedIn', $isLoggedIn);
+
+
+
+        $oidcEndpointLogout .= '?client_id='.$oidcClientKey.'&post_logout_redirect_uri=' . urlencode(
+                GeneralUtility::getIndpEnv('TYPO3_SITE_URL').'?logintype=logout'
+            );
+        $this->view->assign('logoutLink', $oidcEndpointLogout);
+
 
         if ($this->request->getQueryParams()['loginSuccess'] ?? false) {
             $this->view->assign('showLoginSuccessMessage', true);
