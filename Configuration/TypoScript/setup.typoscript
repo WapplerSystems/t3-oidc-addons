@@ -3,6 +3,8 @@
 plugin.tx_oidcaddons {
     settings {
         oidcPluginPageId = {$plugin.tx_oidcaddons.settings.oidcPluginPageId}
+
+        redirectToPageAfterLogin = {$plugin.tx_oidcaddons.settings.redirectToPageAfterLogin}
     }
 }
 

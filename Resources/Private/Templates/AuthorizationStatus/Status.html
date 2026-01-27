@@ -17,7 +17,7 @@
             <a class="btn btn-primary" href="{logoutLink}"><f:translate key="LLL:EXT:oidc_addons/Resources/Private/Languages/locallang.xlf:btn.logout" /></a>
         </f:then>
         <f:else>
-            <f:link.page pageUid="{settings.oidcPluginPageId}" class="btn btn-primary"><f:translate key="LLL:EXT:oidc_addons/Resources/Private/Languages/locallang.xlf:btn.login" /></f:link.page>
+            <f:link.page pageUid="{settings.oidcPluginPageId}" additionalParams="{additionalLoginParameters}" class="btn btn-primary"><f:translate key="LLL:EXT:oidc_addons/Resources/Private/Languages/locallang.xlf:btn.login" /></f:link.page>
         </f:else>
     </f:if>
 

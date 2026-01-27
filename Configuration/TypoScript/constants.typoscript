@@ -1,8 +1,11 @@
 
 plugin.tx_oidcaddons {
     settings {
-        # cat=plugin.tx_oidcaddons/other/b; type=int+; label=Page ID where the oidc plugin is located
+        # cat=plugin.tx_oidcaddons/other/a; type=int+; label=Page ID where the oidc plugin is located
         oidcPluginPageId =
+
+        # cat=plugin.tx_oidcaddons/other/b; type=int+; label=Page ID to redirect after login
+        redirectToPageAfterLogin =
 
     }
 
