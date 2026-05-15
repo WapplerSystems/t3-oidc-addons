@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages">
+	<file source-language="en" target-language="nl" datatype="plaintext" original="messages">
 		<body>
 			<trans-unit id="btn.login">
 				<source>Log in</source>
